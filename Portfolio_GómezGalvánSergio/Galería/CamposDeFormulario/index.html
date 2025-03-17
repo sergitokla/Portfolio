@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Sergio Gomez Galvan</title>
+</head>
+<body>
+    <form name= "form" action="http://www.google.es" method = "POST">
+        <fieldset>
+        <legend>Datos Personales</legend>
+        <label>Nombre</label>
+        <input type="text" name="nombre" id="nombre"required placeholder="Escribe tu nombre">
+        <br>
+        <label>Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos"required placeholder="Escribe tus apellidos">
+        <br>
+        <label>Edad</label>
+        <input type="number" name="edad" id="edad" min="0" max="110" required placeholder="Edad">
+        <br>
+        <label>Teléfono</label>
+        <input type="tel" name="teléfono" id="teléfono" required placeholder="6581648565">
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" id="email" required placeholder="ejemploemail123@gmail.com">
+        <br>
+        <label>Fecha de Ncimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento" required>
+        <br>
+        <label>Di algo sobre ti</label>
+        <textarea type="texto" name="describete" id="describete" required placeholder="Descríbete"></textarea>
+        <br>
+        <label>Color</label>
+        <input type="color"></textarea>
+        <br>
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="hombre" required> Hombre
+        <input type="radio" name="sexo" value="mujer"> Mujer
+        </fieldset>
+        <fieldset>
+        <legend>Seleccione su provincia</legend>
+        <label>Elija una provincia</label>
+        <select name="ciudad" title="elija provincia" required>
+        <option selected="selected" value="elegir">Elige una opción</option>
+        <option value="cadiz">Sevilla</option >
+        <option value="cadiz">Cádiz</option >
+        <option value="Jaen">Jaén</option >
+        <option value="Huelva">Huelva</option >
+        <option value="Almeria">Almería</option >
+        <option value="Cordoba">Córdoba</option >
+        <option value="Granada">Granada</option >
+        <option value="Malaga">Málaga</option >
+        </select>
+        <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Variedad</legend>
+            <label>Subir una imagen</label>
+            <input type="file" required>
+            <br>
+            <label>Comidas favoritas</label>
+            <br>
+            <input type="checkbox" name="comida" value="pollo"> Filete de pollo
+            <input type="checkbox" name="comida" value="arroz"> Arroz
+            <input type="checkbox" name="comida" value="macarrones"> Macarrones
+            <input type="checkbox" name="comida" value="hamburguesa"> Hamburguesa
+            <br>
+            <label>Progreso HTML</label>
+            <input type="range" value="50" name="barra" required></input>
+            <br>
+            <label for="mes">Mes favorito</label>
+            <input type="month" required> 
+            <br>
+            <label>Mis Hobbies</label>
+            <select multiple="multiple" name="hobbies" size="2" title="hobbies" required>
+                <option selected="selected" value="elegir" required>Puede haber mas de una</option>
+                <option selected="selected" value="elegir" required>opción</option>
+                <option value="videojuegos" required>Jugar videojuegos</option >
+                <option value="comer" required>Comer</option >
+                <option value="futbol" required>Jugar a fútbol</option >
+            </select>
+        </fieldset>
+    <p><input type="submit" value="Enviar" required><input type="reset" value="Borrar" required></p>  
+</form>        
+</body>
+</html>

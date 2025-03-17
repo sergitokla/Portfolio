@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/bg.png);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer"
+    
+    ;
+
+        header{
+            grid-area: header;
+            background-color: white;
+            text-align: center;
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+            h1{
+                font-variant: small-caps;
+                font-size: 25px;
+            }
+
+            h2{
+                font-family: serif;
+                letter-spacing: 2px;
+                font-weight: 100;
+            }
+
+            nav{
+                background-color: black;
+                color: white;
+                width: 100%;
+                padding: 10px;
+
+                ol{
+                    margin: 0px;
+                    padding: 1px;
+                    text-align: center;
+                    list-style: none;
+
+                    li{
+                        display:inline-block;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                    }
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 10px;
+                    }
+                }
+            }  
+        }
+
+       
+
+        main{
+            grid-area: main;
+            margin: 10px 10px 0px 30px;
+            
+
+            #biografia{
+                background-color: white;
+                padding-bottom: 1px;
+                padding: 30px;
+            }
+
+            #tabla{
+                background-color: white;
+            }
+
+            p{
+                text-align: justify;
+            }
+
+            h1{
+                font-size: 18px;
+                margin-top: 0px;
+            }
+
+            .titulo{
+                font-size: 25px;
+            }
+
+            figure{
+                width: 15em;
+                margin: 0px;
+                padding-left: 25px;
+                float: right;
+
+                figcaption{
+                    font-size: 15px;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            
+
+            hr{
+                border: 1% dotted gray;
+            }
+
+            .citas{
+                background-color: rgba(0, 0, 0, 0.700);
+                color: white;
+                font-style: italic;
+                padding: 36px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                cite{
+                    font-size: 23px;
+                    font-weight: 900;
+                    text-align: center;
+                }
+    
+                cite::before, cite::after{
+                    content: "\0022";
+                    font-size: 30px;
+                    color: red;
+                }
+    
+                span{
+                    font-weight: 10px;
+                }
+    
+            }
+        }
+
+        aside{
+            grid-area: aside;
+            margin: 10px;
+
+            img{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                width: 100%;
+            }
+
+        }
+
+        .tabla{
+            padding: 1.5em 1em;
+            border: 1px solid #ddd;
+
+            h1{
+                font-size: 30px;
+                margin: 30px;
+            }
+
+            table{
+                margin-left: 20%;
+                width: 60%;
+            }
+
+            th, td{
+                padding: 1.5em 1em;
+            }
+
+            th{
+                background-color: black;
+                color: white;
+                font-size: 12px;
+            }
+
+            td{
+                font-size: 10px;
+            }
+
+            .primer{
+                background-color: #E2D815;
+            }
+
+            .segundo{
+                background-color: #C0BCB8;
+            }
+
+            .tercer{
+                background-color: #BF7732;
+            }
+        }
+
+    footer{
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 6.5px;
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+    }   
+
+}
