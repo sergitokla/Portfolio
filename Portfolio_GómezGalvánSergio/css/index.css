@@ -1,2 +1,119 @@
 /*importamos la fuente*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+
+html{
+    /*Para que el desplazamiento sea mas suave por la página*/
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f6fafc
+}
+
+/*seccion de inicio*/
+.inicio{
+    background: linear-gradient(to right,#000c67, #007be5);
+    /*Hecho con clip-path generator en esta página --> https://bennettfeely.com/clippy/*/
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding: 0 20px;
+
+    .contenido{
+        max-width: 1100px;
+        margin: auto;
+        color: #fff;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        align-items: center;
+    }
+
+    .logo{
+      display: flex;
+      color: #00deef;
+      font-size: 25px;
+      i{
+        display: inline-block;
+        margin-right: 20px;
+      } 
+    } 
+}
+
+#inicio header nav a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    /*Para convertir el texto en mayusculas*/
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+/*Para cuando pasemos el cursor sobre la barra de navegación*/
+#inicio header nav a:hover{
+border-bottom: 2px solid #ff5b00;
+}
+
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/*para cuando pasemos el cursor por encima de las redes*/
+.inicio .redes a:hover{
+    color:#ff5b00;
+}
+
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.inicio .fila .col{
+    width: 50%;
+}
+
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.inicio .fila .col p{
+    margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+}
+
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color:#fff;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    /*Transicion para el boton*/
+    transition: .5s;
+    /*Para que aparezca la mano cuando pasemos el cursor por encima*/
+    cursor: pointer;
+
+}
