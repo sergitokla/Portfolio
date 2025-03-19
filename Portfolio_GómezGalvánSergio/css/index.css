@@ -104,7 +104,7 @@ border-bottom: 2px solid #ff5b00;
     width: 100%;
 }
 
-.inicio .fila .col button{
+.inicio .fila .col a{
     background: none;
     width: fit-content;
     padding: 5px 40px;
@@ -118,7 +118,7 @@ border-bottom: 2px solid #ff5b00;
 
 }
 
-.inicio .fila .col button:hover{
+.inicio .fila .col a:hover{
     /*Para que cuando pongamos el cursor por encima se agrande el rectangulo del CV*/
     transform: scale(1.1);
 }

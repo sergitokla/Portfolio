@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto';
+    }
+    
+    #mascotas{
+        width: 100% ;
+        object-fit: cover;
+        padding-bottom: 50px;
+    }
+    
+    h1{
+        background-color: #80b3ec;
+        text-align: center;
+        padding: 25px;
+        margin: 0px;
+    }
+    
+    section{
+        text-align: center;
+        padding-bottom: 5px;
+    
+        #quees{
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 15.7px;
+        }
+    }
+    
+    #titulo{
+        font-size: 25px;
+        color: #7DB2E0;
+    }
+    
+    
+    
+    article{
+        background-color: #eff8ff;
+        padding: 30px;
+        margin: 20px auto;
+    
+        h2{
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 24px;
+        }
+        p{
+            font-size: 17px; 
+            line-height: 1.6; 
+            text-align: justify; 
+            margin-bottom: 15px; 
+        }
+        ul{
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        li{
+            font-size: 16.3px;
+        }
+    }
+    
+    #gallery{
+        margin: 50px 0;
+    
+        h2{
+            font-size: 22px;
+            font-weight: bold;
+            color: #7DB2E0;
+            text-align: center;
+            margin-bottom: 110px;
+    
+        }
+    
+        #photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+        #photos img {
+            border-radius: 10px;
+            max-width: 400px;
+            object-fit: cover;
+            width: calc(33.33% - 10px);
+    
+        }
+        
+    }
+    
+    aside{
+        background-color:#eff8ff;
+        padding: 20px;
+        margin-top: 110px;
+    
+        
+        h2{
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    
+        ul{
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 12.8px;
+        }
+    }
+    
+    footer{
+        background-color:#80b3ec;
+        text-align: center;
+        padding: 27px;
+    }
