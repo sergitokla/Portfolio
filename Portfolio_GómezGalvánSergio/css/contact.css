@@ -58,3 +58,19 @@
     cursor: pointer;
     background: linear-gradient(to right, #ff5b00, #ff9900);
 }
+
+@media screen and (max-width:800px){
+    .contacto .fila{
+        display:  block !important;
+    }
+    .contacto .fila .col{
+        text-align: center;
+        width: 100% !important;
+    }
+    .contacto .fila .col .info{
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+
+}
