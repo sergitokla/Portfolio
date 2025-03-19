@@ -235,13 +235,13 @@ border-bottom: 2px solid #ff5b00;
 }
 
 /*RESPONSIVE*/
-@media screen and (max-width:1180px){
+@media screen and (max-width:1600px){
     .inicio{
         clip-path: none;
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
     .redes{
         display: none;
     }

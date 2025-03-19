@@ -30,10 +30,26 @@
                     </div>
                 </div>
                 <div class="col">
-                    <input type="text" placeholder="Nombre...">
+                    <input type="text" required placeholder="Nombre...">
+                    <input type="text" required placeholder="Escribe tus apellidos">
+                    <input type="number" min="0" max="110" required placeholder="Edad">
+                    <label>Sexo:</label>
+                    <input type="radio" name="sexo" value="hombre" required> Hombre
+                    <input type="radio" name="sexo" value="mujer"> Mujer
                     <input type="text" placeholder="Correo...">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <label for="motivo">Motivo de consulta:</label>
+
+                    <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona un motivo</option>
+                    <option value="Dudas">Dudas</option>
+                    <option value="informacion">Solicitud de más información</option>
+                    <option value="otro">Otro</option>
+                    </select>
+
+                    <textarea name="" id="" cols="30" rows="10" required placeholder="Mensaje"></textarea>
+                    <input type="checkbox" id="terminos">Acepto los terminos y condiciones
                     <input type="submit" value="Enviar" class="btn">
+
                 </div>
             </div>
         </div>
