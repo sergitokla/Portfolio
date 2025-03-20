@@ -1,4 +1,7 @@
+/*Importamos fuente*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+
+/*Definimos fuente, eliminamos margenes y rellenos, borderbox para que el padding y el borde se incluyan en el ancho y alto de los elementos*/
 *{
     margin: 0;
     padding: 0;
@@ -6,29 +9,37 @@
     font-family: 'M PLUS Rounded 1c';
 }
 
+/*Alineacion del titulo de la pagina*/
 header{
     text-align: center;
     padding-bottom: 20px;
 }
 
+/*Color del subtitulo y posicionamiento*/
 h2{
     color: #007be5;
     padding-bottom: 20px;
 }
 
+/*Posicionamiento para los cuadrados de los proyectos y subtitulo*/
 .proyectos{
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
 }
+
+/*Posicionamiento del subtitulo*/
 .proyectos h2{
     text-align: center;
 }
 
+/*Posicionamiento para las imagenes de dentro de los cuadrados*/
 .proyectos .galeria .item img{
     width: 100%;
     height: 100%;
 }
+
+/*Grid para hacer la disposicion de los cuadrados de cada proyecto*/
 .proyectos .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -36,12 +47,16 @@ h2{
     /*Para que el footer no este pegado a los cuadrados de los proyectos*/
     margin-bottom: 198px;
 }
+
+/*Para bordes de los cuadrados y estetica */
 .proyectos .galeria .item{
     position: relative;
     overflow: hidden;
     border: 1px solid #8d8d8d ;
     border-radius: 10px;
 }
+
+/*Disposicion de lo que hay cuando ponemos el cursor encima del proyecto*/
 .proyectos .galeria .item .info{
     position: absolute;
     top: -100%;
@@ -54,17 +69,16 @@ h2{
     opacity: 0;
     transition: .3s;
 }
-.proyectos .galeria .item .info h3{
-    color: #000;
-    margin-bottom: 20px;
-}
+
+/*Ajustes de los colores y de cajas de lo que esta hecho el proyecto seleccionado*/
 .proyectos .galeria .item .info span{
     color: #8d8d8d;
-    display: inline-block;
     border: 2px solid #8d8d8d;
     margin: 0 3px;
     padding:  0 5px;
 }
+
+/*Ajustes para el link de ver trabajo*/
 .proyectos .galeria .item .info a{
     display: block;
     margin: 20px;
@@ -72,11 +86,14 @@ h2{
     color: #007be5;
     font-weight: bold;
 }
+
+/*Para que aparezca la ventanita de informacion y ver proyecto*/
 .proyectos .galeria .item:hover .info{
     opacity: 1;
     top: 0;
 }
 
+/*Disposicion del footer*/
 footer{
     background-color: #000;
     color: #fff;

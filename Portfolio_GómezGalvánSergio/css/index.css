@@ -1,23 +1,27 @@
 /*importamos la fuente*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
 
+
+/*Definimos fuente, eliminamos margenes y rellenos, borderbox para que el padding y el borde se incluyan en el ancho y alto de los elementos*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c';
 }
-
+   
+/*Para que el desplazamiento sea mas suave por la página*/
 html{
-    /*Para que el desplazamiento sea mas suave por la página*/
     scroll-behavior: smooth;
 }
 
+/*Tono de color del fondo*/
 body{
     background-color: #f6fafc
 }
 
 /*seccion de inicio*/
+/*Gradient para el clip-path, una altura de 90vh, padding horizontal de 20px*/
 .inicio{
     background: linear-gradient(to right,#000c67, #007be5);
     /*Hecho con clip-path generator en esta página --> https://bennettfeely.com/clippy/*/
@@ -25,12 +29,14 @@ body{
     height: 90vh;
     padding: 0 20px;
 
+    /*Ancho del contenido de 1100px, centramos el contenido horizontalmente, texto de color blanco*/
     .contenido{
         max-width: 1100px;
         margin: auto;
         color: #fff;
     }
 
+    /*Alineamos los elementos del encabezado y lo distribuimos con espacio entre ellos, alineamos los elementos verticarlmente*/
     header{
         display: flex;
         justify-content: space-between;
@@ -38,6 +44,7 @@ body{
         align-items: center;
     }
 
+    /*Mostramos el logo como un contenedor flexible, ponemos color al logo y un tamaño a la fuente*/
     .logo{
       display: flex;
       color: #00deef;
@@ -49,61 +56,63 @@ body{
     } 
 }
 
+/*Eliminamos el subrayado de los enlaces, padding para arriba y abajo, convertimos el texto en mayusculas y borde transparente para que no se vea inicialmente*/
 #inicio header nav a{
     color:#fff;
     text-decoration: none;
     display: inline-block;
     padding: 5px 10px;
-    /*Para convertir el texto en mayusculas*/
     text-transform: uppercase;
     border: 2px solid transparent;
 }
 
-/*Para cuando pasemos el cursor sobre la barra de navegación*/
+/*Para cuando pasemos el cursor sobre la barra de navegación se muestre un borde inferior naranja*/
 #inicio header nav a:hover{
 border-bottom: 2px solid #ff5b00;
 }
 
+/*Color para los iconos y un margen horizontal*/
 .inicio .redes a{
-    text-decoration: none;
     color: #fff;
     display: inline-block;
     margin: 0 10px;
 }
 
-/*para cuando pasemos el cursor por encima de las redes*/
-.inicio .redes a:hover{
-    color:#ff5b00;
-}
-
+/*Organizamos los elementos en una fila, añadimos un margen superior y un padding inferior*/
 .inicio .fila{
     display: flex;
     margin-top: 50px;
     padding-bottom: 100px;
 }
 
+/*Cada columna dentro de la fila ocupa el 50% del ancho*/
 .inicio .fila .col{
     width: 50%;
 }
 
+/*Tamaño de fuente y margen inferior*/
 .inicio .fila .col h2{
     margin-bottom: 15px;
     font-size: 40px;
 }
 
+/*Margen inferior*/
 .inicio .fila .col p{
     margin-bottom: 20px;
 }
 
+/*Ancho del 400px y centramos el margen horizontalmente*/
 .inicio .fila .col .contenedor-img{
     max-width: 400px;
     margin: auto;
 }
 
+/*Ajuste para el espacio que tiene que ocupar la imagen*/
 .inicio .fila .col .contenedor-img img{
     width: 100%;
 }
 
+/*Para el boton del cv, los colores y posicionamiento*/
 .inicio .fila .col a{
     background: none;
     width: fit-content;
@@ -111,38 +120,12 @@ border-bottom: 2px solid #ff5b00;
     border: 2px solid #ff5b00;
     color:#fff;
     background: linear-gradient(to right, #ff5b00, #ff9900);
-    /*Transicion para el boton*/
-    transition: .5s;
     /*Para que aparezca la mano cuando pasemos el cursor por encima*/
     cursor: pointer;
-
 }
 
-.inicio .fila .col a:hover{
-    /*Para que cuando pongamos el cursor por encima se agrande el rectangulo del CV*/
-    transform: scale(1.1);
-}
-
-/*Ajuste icono de las barritas*/
-#icono-nav{
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-     /*Transicion para el icono*/
-    transition: .3s;
-       /*Para que aparezca la mano cuando pasemos el cursor por encima*/
-    cursor: pointer;
-    display: none;
-}
-
-#icono-nav:hover{
-    background-color: #3e3e3e;
-}
-
+/*Sombra del clip path*/
 .sombra{
-    /*sombreado del clip path*/
     filter: drop-shadow(0em 30px 20px #9bd2f4);
 }
 
@@ -156,6 +139,7 @@ border-bottom: 2px solid #ff5b00;
     z-index: 10;
 }
 
+/*Flex para ordenar las tarjetas*/
 .skills .fila{
     display: flex;
     justify-content: space-between;
@@ -163,13 +147,13 @@ border-bottom: 2px solid #ff5b00;
     gap: 20px;
     margin-bottom: 50px;
 }
-
+/*Para que no esten desordenadas las tarjetas*/
 .skills .fila .col{
-
     text-align: center;
     width: 30%;
 }
 
+/*Para las tarjetas de las skills*/
 .skills .fila .col .card{
     border: 1px solid #8d8d8d;
     height: 290px;
@@ -179,6 +163,7 @@ border-bottom: 2px solid #ff5b00;
     position: relative;
 }
 
+/*Posicionamiento de los iconos de las tarjetas*/
 .skills .icono{
     width: 70px;
     height: 70px;
@@ -190,6 +175,7 @@ border-bottom: 2px solid #ff5b00;
     margin-bottom: 30px;
 }
 
+/*Posicionamiento circulo de iconos*/
 .skills .icono .circulo{
     width: 90%;
     height: 90%;
@@ -202,6 +188,7 @@ border-bottom: 2px solid #ff5b00;
     font-size: 20px;
 }
 
+/*Colores de circulos con gradient*/
 .color1{
     background:linear-gradient(#ff9900, #ff5b00);
 }
@@ -214,26 +201,19 @@ border-bottom: 2px solid #ff5b00;
     background:linear-gradient(#04e2ee, #017795);
 }
 
+/*Margen inferior para los titulos de las tarjetas*/
 .skills h3{
     margin-bottom: 20px;
 }
 
+/*Ajustes para el texto de las tarjetas*/
 .skills .card p{
     color: #8d8d8d;
     line-height: 28px;
     font-size: 12px;
 }
 
-.skills .card a{
-    text-decoration: none;
-    color: #008cff;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    /*Para trasladar horizontalmente*/
-    transform: translateX(-50%);
-}
-
+/*Color, posicionamiento del footer*/
 footer{
     background-color: #000;
     color: #fff;
@@ -243,16 +223,15 @@ footer{
 }
 
 /*RESPONSIVE*/
+/*Quitamos el clip path para que se quede en forma de rectangulo y no de triangulos*/
 @media screen and (max-width:1600px){
     .inicio{
         clip-path: none;
     }
 }
 
+/*Cambiamos el posicionamiento de la imagen y del texto, de los iconos de las redes, el boton del cv y la posicion de las tarjetas*/
 @media screen and (max-width:1000px){
-    .redes{
-        display: none;
-    }
     #nav{
         display: none;
     }

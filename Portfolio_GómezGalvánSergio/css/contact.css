@@ -1,11 +1,14 @@
+/*Importamos fuente*/
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
 
+/*Definimos fuente, eliminamos margenes y rellenos, borderbox para que el padding y el borde se incluyan en el ancho y alto de los elementos*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c';
 }
+/*Imagen para el fondo el color gradient para el color desvanecido y disposicion de todos los elementos*/
 .contacto{
     background:
         linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8)),
@@ -18,28 +21,36 @@
     align-items: center; 
     justify-content: center; 
 }
-.contacto .contenedor-contacto{
-    max-width: 1100px;
-    margin: auto;
-}
+
+/*Disposicion del titulo*/
 .contacto h2{
     text-align: center;
     padding-bottom: 30px;
 }
+
+/*Para la disposicion de mi informacion y los campos que hay que rellenar*/
 .contacto .contenedor-contacto .fila{
     display: flex;
 }
+
+/*Para que las cajas ocupen menos y no choque con mi informacion*/
 .contacto .contenedor-contacto .fila .col{
     width: 50%;
 }
+
+/*Disposicion de mi informacion para que este separado y ordenado*/
 .contacto .contenedor-contacto .info{
     margin-bottom: 30px;
     border-left: 3px solid #8d8d8d;
     padding-left: 8px;
 }
+
+/*Para el color de mi informacion (telefono, gamil, pais,ciudad)*/
 .contacto .contenedor-contacto .info p{
     color: #8d8d8d;
 }
+
+/*Disposicion y colores y bordes de la caja de mensaje*/
 .contacto input, .contacto textarea{
     width: 100%;
     border: none;
@@ -51,17 +62,21 @@
     color: #ff5b00;
     margin-top: 10px;
 }
+
+/*Disposicion de seleccion del sexo*/
 .contacto .sexo{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
+/*Disposicion para los terminos y condiciones*/
 .contacto .terminos {
     display: flex;
     margin-right: 99px;
 }
 
+/*Disposicion y color del boton de enviar*/
 .contacto .btn{
     background-color: none;
     padding: 5px 40px;
@@ -70,6 +85,8 @@
     cursor: pointer;
     background: linear-gradient(to right, #ff5b00, #ff9900);
 }
+
+/*Disposicion del footer*/
 footer{
     background-color: #000;
     color: #fff;
@@ -78,6 +95,7 @@ footer{
     text-align: center;
 }
 
+/*Disposicion de mi informacion y de campos que se piden rellenar*/
 @media screen and (max-width:800px){
     .contacto .fila{
         display:  block !important;
