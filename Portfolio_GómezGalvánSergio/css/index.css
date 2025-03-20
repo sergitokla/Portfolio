@@ -234,6 +234,14 @@ border-bottom: 2px solid #ff5b00;
     transform: translateX(-50%);
 }
 
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
 /*RESPONSIVE*/
 @media screen and (max-width:1600px){
     .inicio{

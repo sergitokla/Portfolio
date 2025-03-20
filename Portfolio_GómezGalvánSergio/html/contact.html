@@ -33,26 +33,38 @@
                     <input type="text" required placeholder="Nombre...">
                     <input type="text" required placeholder="Escribe tus apellidos">
                     <input type="number" min="0" max="110" required placeholder="Edad">
+                  
+                    <div class="sexo"> 
                     <label>Sexo:</label>
                     <input type="radio" name="sexo" value="hombre" required> Hombre
                     <input type="radio" name="sexo" value="mujer"> Mujer
-                    <input type="text" placeholder="Correo...">
-                    <label for="motivo">Motivo de consulta:</label>
+                    </div>
 
-                    <select id="motivo" name="motivo" required>
+                    <input type="text" placeholder="Correo...">
+
+                    <label for="motivo">Motivo de consulta:</label>
+                     <select id="motivo" name="motivo" required>
                     <option value="">Selecciona un motivo</option>
                     <option value="Dudas">Dudas</option>
                     <option value="informacion">Solicitud de más información</option>
                     <option value="otro">Otro</option>
                     </select>
+                    <!--Cols y rows para el tamaño de la caja-->
+                    <textarea cols="30" rows="10" required placeholder="Mensaje"></textarea>
 
-                    <textarea name="" id="" cols="30" rows="10" required placeholder="Mensaje"></textarea>
+                    <!--Div para ordenar los terminos-->
+                    <div class="terminos">
                     <input type="checkbox" id="terminos">Acepto los terminos y condiciones
+                    </div>
+
                     <input type="submit" value="Enviar" class="btn">
 
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <p>Sergio Gómez Galván. Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
