@@ -43,17 +43,16 @@ body{
         padding: 30px 0;
         align-items: center;
     }
-
-    /*Mostramos el logo como un contenedor flexible, ponemos color al logo y un tamaño a la fuente*/
-    .logo{
-      display: flex;
-      color: #00deef;
-      font-size: 25px;
-      i{
-        display: inline-block;
-        margin-right: 20px;
-      } 
-    } 
+        /*Mostramos el logo como un contenedor flexible, ponemos color al logo y un tamaño a la fuente*/
+        .logo{
+            display: flex;
+            color: #00deef;
+            font-size: 25px;
+            i{
+              display: inline-block;
+              margin-right: 20px;
+            } 
+          }
 }
 
 /*Eliminamos el subrayado de los enlaces, padding para arriba y abajo, convertimos el texto en mayusculas y borde transparente para que no se vea inicialmente*/
@@ -71,12 +70,6 @@ body{
 border-bottom: 2px solid #ff5b00;
 }
 
-/*Color para los iconos y un margen horizontal*/
-.inicio .redes a{
-    color: #fff;
-    display: inline-block;
-    margin: 0 10px;
-}
 
 /*Organizamos los elementos en una fila, añadimos un margen superior y un padding inferior*/
 .inicio .fila{

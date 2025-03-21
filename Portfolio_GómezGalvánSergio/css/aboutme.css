@@ -8,3 +8,162 @@
     font-family: 'M PLUS Rounded 1c';
 }
 
+/*Gradient para el clip-path, una altura de 90vh, padding horizontal de 20px*/
+.inicio{
+    background: linear-gradient(to right,#000c67, #007be5);
+    /*Hecho con clip-path generator en esta página --> https://bennettfeely.com/clippy/*/
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 80%, 0 45%);
+    height: 90vh;
+    padding: 0 20px;
+
+    /*Ancho del contenido de 1100px, centramos el contenido horizontalmente, texto de color blanco*/
+    .contenido{
+        max-width: 1100px;
+        margin: auto;
+        color: #fff;
+    }
+
+    /*Alineamos los elementos del encabezado y lo distribuimos con espacio entre ellos, alineamos los elementos verticarlmente*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        align-items: center;
+    }
+}
+
+/*Eliminamos el subrayado de los enlaces, padding para arriba y abajo, convertimos el texto en mayusculas y borde transparente para que no se vea inicialmente*/
+#inicio header nav a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+/*Para cuando pasemos el cursor sobre la barra de navegación se muestre un borde inferior naranja*/
+#inicio header nav a:hover{
+    border-bottom: 2px solid #ff5b00;
+}
+
+/*Organizamos los elementos en una fila, añadimos un margen superior y un padding inferior*/
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*Cada columna dentro de la fila ocupa el 50% del ancho*/
+.inicio .fila .col{
+    width: 50%;
+}
+
+/*Tamaño de fuente y margen inferior*/
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+/*Margen inferior*/
+.inicio .fila .col p{
+    margin-bottom: 20px;
+}
+
+/*Ancho del 400px y centramos el margen horizontalmente*/
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+}
+
+/*Ajuste para el espacio que tiene que ocupar la imagen*/
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+
+/*Sombra del clip path*/
+.sombra{
+    filter: drop-shadow(0em 30px 20px #9bd2f4);
+}
+
+
+/*Posicionamiento para los cuadrados de los proyectos y subtitulo*/
+.proyectos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*Posicionamiento del subtitulo*/
+.proyectos h2{
+    text-align: center;
+    color: #007be5;
+}
+
+/*Posicionamiento para las imagenes de dentro de los cuadrados*/
+.proyectos .galeria .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Grid para hacer la disposicion de los cuadrados de cada proyecto*/
+.proyectos .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+    /*Para que el footer no este pegado a los cuadrados de los proyectos*/
+    margin-bottom: 198px;
+}
+
+/*Para bordes de los cuadrados y estetica */
+.proyectos .galeria .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d ;
+    border-radius: 10px;
+}
+
+/*Color, posicionamiento del footer*/
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+/*Quitamos el clip path para que se quede en forma de rectangulo y no de triangulos*/
+@media screen and (max-width:1600px){
+    .inicio{
+        clip-path: none;
+    }
+}
+
+/*Cambiamos el posicionamiento de la imagen y del texto, de los iconos de las redes, el boton del cv y la posicion de las tarjetas*/
+@media screen and (max-width:1000px){
+    #nav{
+        padding-left: 10px;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .proyectos h2{
+        padding-top: 20px;
+    }
+}
