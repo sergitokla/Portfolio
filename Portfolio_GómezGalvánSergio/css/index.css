@@ -233,27 +233,7 @@ footer{
 /*Cambiamos el posicionamiento de la imagen y del texto, de los iconos de las redes, el boton del cv y la posicion de las tarjetas*/
 @media screen and (max-width:1000px){
     #nav{
-        display: none;
-    }
-    #nav.responsive{
-        background-color: rgba(0,0,0,.9);
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        position: absolute;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 99;
-    }
-    #nav.responsive a{
-        font-size: 30px;
-    }
-    #icono-nav{
-        display: block;
+        padding-left: 10px;
     }
 
     .inicio{
