@@ -107,14 +107,5 @@ footer{
     text-align: center;
 }
 
-/*Eliminamos el subrayado de los enlaces, padding para arriba y abajo, convertimos el texto en mayusculas y borde transparente para que no se vea inicialmente*/
-.header nav a{
-    color:#fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-}
 
 
