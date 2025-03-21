@@ -13,6 +13,11 @@
 header{
     text-align: center;
     padding-bottom: 20px;
+    
+    /*Para el nav*/
+    nav{
+        text-transform: uppercase;
+    }
 }
 
 /*Color del subtitulo y posicionamiento*/
@@ -101,3 +106,15 @@ footer{
     font-size: 14px;
     text-align: center;
 }
+
+/*Eliminamos el subrayado de los enlaces, padding para arriba y abajo, convertimos el texto en mayusculas y borde transparente para que no se vea inicialmente*/
+.header nav a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+
